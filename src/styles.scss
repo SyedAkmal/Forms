@@ -393,3 +393,21 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* Menus/dialogs/Select panel above everything */
 .cdk-overlay-container { position: fixed; z-index: 2000; }
+/* Consistent button styling for contrast */
+button,
+.mat-raised-button,
+.mat-flat-button,
+.mat-stroked-button {
+  background-color: #1976d2 !important; /* Material blue */
+  color: #fff !important;               /* White text for contrast */
+  border: none !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08) !important;
+  transition: background 0.2s ease-in-out !important;
+}
+
+button:hover,
+.mat-raised-button:hover,
+.mat-flat-button:hover,
+.mat-stroked-button:hover {
+  background-color: #1565c0 !important; /* Slightly darker on hover */
+}

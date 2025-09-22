@@ -130,9 +130,8 @@
         </div>
 
         <div class="table-wrap" *ngIf="dataSource?.data?.length; else noTemplates">
-          <table mat-table [dataSource]="dataSource" class="mat-elevation-z1">
-            <!-- table defs unchanged -->
-          </table>
+          <!-- <table mat-table [dataSource]="dataSource.data" class="mat-elevation-z1">
+          </table> -->
         </div>
 
         <ng-template #noTemplates>
